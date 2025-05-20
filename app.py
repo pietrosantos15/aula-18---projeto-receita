@@ -26,7 +26,7 @@ def criar_curriculo(nome, email, telefone, objetivo_profissional, area_de_atuaca
 
     Não invente informações. Use apenas o conteúdo fornecido pelo usuário.
 
-    Retorne o currículo apenas em HTML, sem quebras de linha, minificado, pronto para ser exibido em uma página web.
+    Retorne o currículo apenas em texto, sem quebras de linha, minificado, pronto para ser exibido em uma página web.
 
     ### Informações do Usuário:
     - Nome completo: {nome}
