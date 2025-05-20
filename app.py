@@ -26,7 +26,7 @@ def criar_curriculo(nome, email, telefone, objetivo_profissional, area_de_atuaca
 
     Não invente informações. Use apenas o conteúdo fornecido pelo usuário.
 
-    Retorne o currículo apenas em texto, sem quebras de linha, minificado, pronto para ser exibido em uma página web.
+    Retorne o currículo apenas em texto, sem quebras de linha, minificado, pronto para ser exibido em uma página web. O texto precisa ficar mais separado, as informacoes nao podem ficar tao proximas uma da outra
 
     ### Informações do Usuário:
     - Nome completo: {nome}
@@ -41,7 +41,7 @@ def criar_curriculo(nome, email, telefone, objetivo_profissional, area_de_atuaca
     - Idiomas: {idiomas}
     - Certificações: {certificacoes}
 
-    Retorne somente as informações, sem colchetes no início e no final (sem explicações). De forma alguma permita palavrões, homofobia, xenofobia, qualquer tipo de preconceito, racismo, palavras de cunhos sexuais e outros. JAMAIS PERMITA. faça um css para o curriculo. Caso o usuario coloque letras aleatorias como: A, b, c entre outras, nao gere nada, deixe em branco.
+    Retorne somente as informações, sem colchetes no início e no final (sem explicações). De forma alguma permita palavrões, homofobia, xenofobia, qualquer tipo de preconceito, racismo, palavras de cunhos sexuais e outros. JAMAIS PERMITA. faça um css para o curriculo. Caso o usuario coloque letras aleatorias como: A, b, c entre outras, nao gere nada, deixe em branco. PEPECA TAMBEM VAI FICAR EM BRANCO
 
     """
 
