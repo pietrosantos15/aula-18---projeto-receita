@@ -1,23 +1,22 @@
 import json
 from flask import Flask, jsonify, request
 from flask_cors import CORS
-
-import google.generativeai as genai  # Corrigido o import
+import google.generativeai as genai  
 import os
 from dotenv import load_dotenv
 
-# Carrega variáveis do .env
+
 load_dotenv()
 
-# Instância do Flask
+
 app = Flask(__name__)
 CORS(app)
 
-# Configura a API key do Gemini
-genai.configure(api_key=os.getenv("apikey"))  # Corrigido
 
-# Instância do modelo Gemini
-model = genai.GenerativeModel("gemini-1.5-flash")  # Pode usar "gemini-1.5-flash" ou outro
+genai.configure(api_key=os.getenv("apikey"))  
+
+
+model = genai.GenerativeModel("gemini-1.5-flash")  
 
 def criar_curriculo(nome, email, telefone, objetivo_profissional, area_de_atuacao, formacoes, experiencias, habilidades_tecnicas, habilidades_interpessoais, idiomas, certificacoes):
     prompt = f"""
@@ -48,6 +47,10 @@ def criar_curriculo(nome, email, telefone, objetivo_profissional, area_de_atuaca
 
     response = model.generate_content(prompt)
     return {"curriculo": response.text}
+
+@app.route('/', methods=['GET'])
+def index():
+    return 'api on fire 🔥'
 
 @app.route('/listacurriculo', methods=['POST'])
 def fazer_curriculo():
