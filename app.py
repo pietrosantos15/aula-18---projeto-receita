@@ -41,7 +41,7 @@ def criar_curriculo(nome, email, telefone, objetivo_profissional, area_de_atuaca
     - Idiomas: {idiomas}
     - Certificações: {certificacoes}
 
-    Retorne somente as informações, sem colchetes no início e no final (sem explicações). De forma alguma permita palavrões, homofobia, xenofobia, qualquer tipo de preconceito, racismo, palavras de cunhos sexuais e outros. JAMAIS PERMITA. faça um css para o curriculo. 
+    Retorne somente as informações, sem colchetes no início e no final (sem explicações). De forma alguma permita palavrões, homofobia, xenofobia, qualquer tipo de preconceito, racismo, palavras de cunhos sexuais e outros. JAMAIS PERMITA. faça um css para o curriculo.
 
     """
 
